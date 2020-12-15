@@ -1,7 +1,7 @@
 @import "mixins";
 @import "responsive";
  
-header{
+header {
     width: 100%;
     padding: 25px 5px 25px 5px; 
     height: auto;
@@ -17,13 +17,14 @@ header{
         .logo { 
              flex-basis: 20%;
             padding-left :10px;
-            padding-right :10px; 
-            
+            padding-right :10px;
             a{
                 text-decoration: none;
                 color: $green;
                 font-size: $size-large;
                 font-weight: 500;
+                cursor: default;
+                
             }
             p {
                 padding-left: 5px;

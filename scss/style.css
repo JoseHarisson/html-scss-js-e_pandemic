@@ -24,7 +24,8 @@ header {
         text-decoration: none;
         color: #33866c;
         font-size: 1.4em;
-        font-weight: 500; }
+        font-weight: 500;
+        cursor: default; }
       header .container .logo p {
         padding-left: 5px;
         padding-right: 5px;
@@ -64,24 +65,63 @@ header {
     align-items: center;
     flex-direction: column; }
 
-  body .sections .info {
-    padding-top: 212px; } }
+  #info .container .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column; } }
 section {
   width: 100%;
   display: flex;
   justify-content: center; }
   section .container {
-    width: 80%;
-    position: relative;
-    background-color: red; }
+    width: 75%;
+    padding: 25px;
+    background-color: white;
+    font-family: "Lato",sans-serif;
+    -webkit-box-shadows: 0 0 20px rgba(48, 46, 77, 0.15);
+    -moz-box-shadows: 0 0 20px rgba(48, 46, 77, 0.15);
+    -o-box-shadows: 0 0 20px rgba(48, 46, 77, 0.15);
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px; }
     section .container .card {
       display: flex;
       align-items: center;
       flex-direction: row; }
       section .container .card .card-img img {
-        width: 400px;
-        height: 260px; }
+        width: auto;
+        height: auto;
+        max-width: 350px;
+        max-height: 260px; }
+      section .container .card .card-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 30px; }
+        section .container .card .card-text span {
+          color: #33866c;
+          font-weight: bold; }
+        section .container .card .card-text h1 {
+          align-items: center;
+          padding: 50px;
+          font-size: 2.5em; }
+        section .container .card .card-text p {
+          line-height: 25px;
+          padding-bottom: 20px; }
 
+@media (max-width: 800px) {
+  header .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+
+  #info .container .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column; } }
 * {
   margin: 0;
   padding: 0; }
@@ -93,7 +133,7 @@ a {
 body {
   background-color: #e8f1ef;
   height: 2000px; }
-  body .sections .info {
+  body .sections #info {
     padding-top: 165px; }
 
 /*# sourceMappingURL=style.css.map */

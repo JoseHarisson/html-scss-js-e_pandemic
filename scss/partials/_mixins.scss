@@ -24,5 +24,10 @@
     transform: scale($scale);
     padding-left: 10px;
     padding-right: 10px;
+} 
+@mixin border-radius($radius){
+    -webkit-border-radius : $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
 }
 

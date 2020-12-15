@@ -5,17 +5,45 @@ section {
     display: flex;
     justify-content: center;
     .container{
-        width: 80%;
-        position: relative; 
-        background-color: red;
+        width: 75%; 
+        padding: 25px;
+        background-color: $light-white;
+        font-family: "Lato",sans-serif;
+        @include shadow-dark;
+        @include border-radius(20px);
         .card{
             @include flex(row);
             .card-img{ 
                 img{
-                    width: 400px;
-                    height: 260px;
+                    width: auto;
+                    height: auto;
+                    max-width: 350px;
+                    max-height: 260px;
                 }
+            }
+            .card-text{
+                @include flex(column);
+                justify-content: center;
+                align-content: center;
+                padding-bottom: 30px;
+                span{
+                    color: $green;
+                    font-weight: bold;
+                }
+                h1{
+                    align-items:center;
+                    padding: 50px;
+                    font-size: $size-xxlarge;
+                    
+                }
+                p{
+                    line-height: 25px;
+                    padding-bottom: 20px;
+                    
+                } 
             }
         }
     }
 }
+
+@include responsive;

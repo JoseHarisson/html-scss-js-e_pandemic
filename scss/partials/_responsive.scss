@@ -6,13 +6,9 @@
         @content; 
         header .container { 
             @include flex(column);
-        }
-        body{ 
-            .sections{
-                .info{ 
-                    padding-top: $header-height-800px+15px;
-                }
-            }
+        } 
+        #info .container .card{
+            @include  flex(column);
         }
     } 
 }
