@@ -26,8 +26,3 @@
     padding-right: 10px;
 }
 
-@mixin responsive{
-    @media (max-width: 800px) {
-        @content; 
-    }
-}

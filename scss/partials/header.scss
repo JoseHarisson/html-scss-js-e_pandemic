@@ -1,5 +1,6 @@
-@import "mixins.scss";
-
+@import "mixins";
+@import "responsive";
+ 
 header{
     width: 100%;
     padding: 25px 5px 25px 5px; 
@@ -12,10 +13,7 @@ header{
     font-family: "Lato",sans-serif;
     font-size: $size-medium;
     .container{
-        @include flex(row); 
-        @include responsive{ 
-            @include flex(column); 
-        }
+        @include flex(row);
         .logo { 
              flex-basis: 20%;
             padding-left :10px;
@@ -29,13 +27,13 @@ header{
             }
             p {
                 padding-left: 5px;
+                padding-right: 5px;
                 padding-bottom: 5px;
                 color: $dark-grey;
             }
         }
         nav{ 
-            flex-basis: 80%; 
-
+            flex-basis: 80%;  
             .nav_list{  
                 display: flex;   
                 padding-right: 25px;
@@ -50,6 +48,7 @@ header{
 
                     &:last-child{
                         border-right:solid 1px $border-color;
+                        margin-right: 7px;
                     }
                     a{ 
                         @include transition(0.5); 
@@ -65,3 +64,5 @@ header{
     }
     
 }
+
+@include responsive;

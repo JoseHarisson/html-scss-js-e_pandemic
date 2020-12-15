@@ -2,7 +2,7 @@ header {
   width: 100%;
   padding: 25px 5px 25px 5px;
   height: auto;
-  max-height: 125px;
+  max-height: 150px;
   background-color: white;
   border-bottom: solid 0.1em #ececec;
   -webkit-box-shadows: 0 0 20px rgba(48, 46, 77, 0.15);
@@ -16,11 +16,6 @@ header {
     display: flex;
     align-items: center;
     flex-direction: row; }
-    @media (max-width: 800px) {
-      header .container {
-        display: flex;
-        align-items: center;
-        flex-direction: column; } }
     header .container .logo {
       flex-basis: 20%;
       padding-left: 10px;
@@ -32,6 +27,7 @@ header {
         font-weight: 500; }
       header .container .logo p {
         padding-left: 5px;
+        padding-right: 5px;
         padding-bottom: 5px;
         color: #727473; }
     header .container nav {
@@ -47,7 +43,8 @@ header {
           font-size: 1.2em;
           border-inline-start: solid 1px #ececec; }
           header .container nav .nav_list li:last-child {
-            border-right: solid 1px #ececec; }
+            border-right: solid 1px #ececec;
+            margin-right: 7px; }
           header .container nav .nav_list li a {
             -webkit-transition: all 0.5s ease;
             -moz-transition: all 0.5s ease;
@@ -61,6 +58,11 @@ header {
               padding-left: 10px;
               padding-right: 10px; }
 
+@media (max-width: 800px) {
+  header .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column; } }
 * {
   margin: 0;
   padding: 0; }
@@ -73,6 +75,6 @@ body {
   background-color: #e8f1ef;
   height: 2000px; }
   body .main-container .main {
-    padding-top: 140px; }
+    padding-top: 165px; }
 
 /*# sourceMappingURL=style.css.map */

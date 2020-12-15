@@ -1,0 +1,13 @@
+
+//*** BEGIN Responsive ***//
+
+@mixin responsive{
+    @media (max-width: 800px) {
+        @content; 
+        header .container { 
+            @include flex(column);
+        }
+    } 
+}
+
+//*** END Responsive ***//
