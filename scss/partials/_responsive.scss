@@ -4,12 +4,21 @@
 @mixin responsive{
     @media (max-width: 800px) {
         @content; 
+        body{
+            background-color: rgba(152, 251, 152, 0.137);
+        }
+
         header .container { 
             @include flex(column);
         } 
+        
         #info .container .card{
             @include  flex(column);
         }
+        #prevent .no-box-container .card .card-text{
+            font-size: $size-small;
+        }
+        
     } 
 }
 

@@ -1,17 +1,14 @@
 @import 'variables';
-
-#info {
+#prevent {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-    .container{
-        width: 75%; 
+    .no-box-container{
+        width: 80%; 
         padding: 25px;
-        background-color: $light-white;
-        font-family: "Lato",sans-serif;
-        @include shadow-dark;
-        @include border-radius(20px);
+        background-color: transparent;
+        font-family: "Lato",sans-serif; 
         .card{
             @include flex(row);
             .card-img{ 

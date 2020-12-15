@@ -1,6 +1,7 @@
 @import "partials/variables";  
 @import "partials/header.scss";
 @import "partials/info.scss";
+@import "partials/prevent.scss";
 
  
 *{ 
@@ -20,3 +21,4 @@ body{
         }
     }
 }
+@include responsive;
