@@ -1,5 +1,6 @@
 @import "partials/variables";  
 @import "partials/header.scss";
+@import "partials/info.scss";
 
  
 *{ 
@@ -13,8 +14,8 @@ a{
 body{
     background-color: $xlight-grey;
     height: 2000px;
-    .main-container{
-        .main{ 
+    .sections{
+        .info{ 
             padding-top: $header-height+15px;
         }
     }

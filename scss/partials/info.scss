@@ -1,0 +1,21 @@
+@import 'variables';
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 80%;
+        position: relative; 
+        background-color: red;
+        .card{
+            @include flex(row);
+            .card-img{ 
+                img{
+                    width: 400px;
+                    height: 260px;
+                }
+            }
+        }
+    }
+}

@@ -62,7 +62,26 @@ header {
   header .container {
     display: flex;
     align-items: center;
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  body .sections .info {
+    padding-top: 212px; } }
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  section .container {
+    width: 80%;
+    position: relative;
+    background-color: red; }
+    section .container .card {
+      display: flex;
+      align-items: center;
+      flex-direction: row; }
+      section .container .card .card-img img {
+        width: 400px;
+        height: 260px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -74,7 +93,7 @@ a {
 body {
   background-color: #e8f1ef;
   height: 2000px; }
-  body .main-container .main {
+  body .sections .info {
     padding-top: 165px; }
 
 /*# sourceMappingURL=style.css.map */
