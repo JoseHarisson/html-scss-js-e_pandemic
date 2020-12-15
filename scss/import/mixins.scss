@@ -1,6 +1,7 @@
 @mixin shadow-dark{
     -webkit-box-shadows: 0 0 20px rgba(48,46,77,0.15);
-    -moz-box-shadows: 0 0 20px rgba(48,46,77,0.15);;
+    -moz-box-shadows: 0 0 20px rgba(48,46,77,0.15);
+    -o-box-shadows:0 0 20px rgba(48,46,77,0.15);
     box-shadow: 0 0 20px rgba(48,46,77,0.15);
 }
 
@@ -8,10 +9,25 @@
     display: flex;
     align-items: center; 
     flex-direction: $direction;
+} 
+
+@mixin transition($delay){
+    -webkit-transition: all $delay+s ease;
+    -moz-transition: all $delay+s ease;
+    -o-transition: all $delay+s ease;
+    transition: all $delay+s ease;
 }
-@mixin flex_docked($direction,$justify){
-    display: flex;
-    align-items: center;
-    justify-content: $justify;
-    flex-direction: $direction;
+
+@mixin transform($scale){
+    -webkit-transform: scale($scale);
+    -moz-transform: scale($scale);
+    transform: scale($scale);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@mixin responsive{
+    @media (max-width: 800px) {
+        @content; 
+    }
 }
