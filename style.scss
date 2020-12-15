@@ -1,0 +1,15 @@
+$color_red:#961919;
+$color_blue: #0a0c4d;
+
+p{
+    color: $color_red;
+
+    span {
+        font-weight: bold;
+        color: $color_blue;
+        
+    &:hover{
+        font-size: 17px;
+    }
+    }
+}   
