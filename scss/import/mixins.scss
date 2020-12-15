@@ -3,3 +3,15 @@
     -moz-box-shadows: 0 0 20px rgba(48,46,77,0.15);;
     box-shadow: 0 0 20px rgba(48,46,77,0.15);
 }
+
+@mixin flex($direction){
+    display: flex;
+    align-items: center; 
+    flex-direction: $direction;
+}
+@mixin flex_docked($direction,$justify){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
