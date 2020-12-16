@@ -8,6 +8,9 @@
             background-color: rgba(152, 251, 152, 0.137);
         }
 
+
+
+        //*** HEADER ***
         header .container { 
             @include flex(column);
 
@@ -25,11 +28,16 @@
                     font-size: $size-xslarge;
                 }
             }
-        } 
-         
+        }
+        
+        
+        //*** INFORMATION ***
         #info .container .card{
             @include  flex(column);
         }
+        
+        
+        //*** PREVENT ***
         #prevent .no-box-container .card .card-text{
             font-size: $size-xsmall;
         }
@@ -37,8 +45,50 @@
             font-size: $size-medium;
             padding: 50px 25px 50px 25px;
         }
-        
+
+ 
     } 
+    @media (max-width: 1233px) {
+        @content; 
+
+
+
+
+        
+
+        //*** QUESTION ***   
+        #question .container .card{
+            .card-img { 
+                display: none;
+            }
+            .card-text .question-container{
+            @include flex(column); 
+    
+            .q-container{
+                min-height: 200px;
+                margin: 15px;
+                margin-bottom: 0;
+                padding-bottom: 0;
+                width: 100%; 
+                .item{
+                    list-style: none; 
+                    height: 50px;  
+                    padding: 10px 10px 10px 10px;
+                    border-bottom: solid 1px $border-color; 
+                    cursor: pointer;
+                    @include transition(0.4);
+                    &:hover{    
+                        padding-left: 20px;  
+                        color: $red;
+                        border-bottom: solid 1.5px $red;
+                    }
+                }
+            }
+            }
+            
+        } 
+    }
+    
 }
 
 //*** END Responsive ***//
