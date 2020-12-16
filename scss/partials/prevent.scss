@@ -1,43 +1,86 @@
 @import 'variables';
+
 #prevent {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    margin-top: 100px;
     .no-box-container{
         width: 80%; 
         padding: 25px;
         background-color: transparent;
-        font-family: "Lato",sans-serif; 
+        font-family: "Lato",sans-serif;  
         .card{
             @include flex(row);
-            .card-img{ 
-                img{
-                    width: auto;
-                    height: auto;
-                    max-width: 350px;
-                    max-height: 260px;
+            justify-content: center; 
+            .card-img{   
+                width: auto;
+                height: auto;
+                max-width: 440px;
+                max-height: 290px; 
+                g{
+                    path{
+                        fill: $green;
+                    }
+                    .corona{
+                        fill: $red;
+                        
+                    }
                 }
             }
-            .card-text{
-                @include flex(column);
-                justify-content: center;
-                align-content: center;
-                padding-bottom: 30px;
+            .card-text{   
                 span{
-                    color: $green;
+                    color: $red;
                     font-weight: bold;
                 }
                 h1{
                     align-items:center;
+                    color: $green;
                     padding: 50px;
                     font-size: $size-xxlarge;
                     
                 }
                 p{
                     line-height: 25px;
-                    padding-bottom: 20px;
-                    
+                    padding-bottom: 20px; 
+                } 
+            }
+        }
+    }
+}
+
+#prevent-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    .container{
+        width: 75%; 
+        padding: 2px 45px 2px 45px;
+        background-color: $light-white;
+        font-family: "Lato",sans-serif;
+        @include shadow-dark;
+        @include border-radius(20px);  
+        .card{  
+            .card-text{
+                @include flex(column); 
+                align-items: flex-start;
+                padding: 50px 75px 50px 75px;
+                font-size: $size-slarge; 
+                @include transition(0.5); 
+                .blue{
+                    color: $blue; 
+                }
+                .red{
+                    color: $red; 
+                }
+                .green{
+                    color: $green; 
+                } 
+                p{ 
+                    padding-bottom: 30px;  
                 } 
             }
         }

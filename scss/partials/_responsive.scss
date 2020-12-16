@@ -10,13 +10,32 @@
 
         header .container { 
             @include flex(column);
+
+            nav .nav_list li {
+                padding: 12px;
+                list-style: none;
+                font-size: $size-medium;
+                border-inline-start: solid 1px #ececec; }
+
+            .logo{
+                p{ 
+                    font-size: $size-small;
+                }
+                a{
+                    font-size: $size-xslarge;
+                }
+            }
         } 
-        
+         
         #info .container .card{
             @include  flex(column);
         }
         #prevent .no-box-container .card .card-text{
-            font-size: $size-small;
+            font-size: $size-xsmall;
+        }
+        #prevent-text .container .card .card-text{
+            font-size: $size-medium;
+            padding: 50px 25px 50px 25px;
         }
         
     } 

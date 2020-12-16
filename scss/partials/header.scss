@@ -24,6 +24,7 @@ header {
                 font-size: $size-large;
                 font-weight: 500;
                 cursor: default;
+                @include transition(0.5); 
                 
             }
             p {
@@ -31,6 +32,8 @@ header {
                 padding-right: 5px;
                 padding-bottom: 5px;
                 color: $dark-grey;
+                font-size: $size-bsmall;
+                @include transition(0.5); 
             }
         }
         nav{ 
