@@ -5,6 +5,13 @@
     box-shadow: 0 0 20px rgba(48,46,77,0.15);
 }
 
+@mixin shadow-light{
+    -webkit-box-shadows: 0 0 20px rgba(48,46,77,0.1);
+    -moz-box-shadows: 0 0 20px rgba(48,46,77,0.1);
+    -o-box-shadows:0 0 20px rgba(48,46,77,0.1);
+    box-shadow: 0 0 20px rgba(48,46,77,0.1);
+}
+
 @mixin flex($direction){
     display: flex;
     align-items: center; 

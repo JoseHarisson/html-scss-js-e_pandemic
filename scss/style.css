@@ -411,20 +411,38 @@ header {
             margin-bottom: 0;
             padding-bottom: 0;
             width: 42%; }
-            #question .container .card .card-text .question-container .q-container .item {
+            #question .container .card .card-text .question-container .q-container .q-item {
               list-style: none;
               height: 50px;
-              padding: 10px 10px 10px 10px;
+              margin: 10px 10px 10px 10px;
               border-bottom: solid 1px #ececec;
               cursor: pointer;
               -webkit-transition: all 0.4s ease;
               -moz-transition: all 0.4s ease;
               -o-transition: all 0.4s ease;
               transition: all 0.4s ease; }
-              #question .container .card .card-text .question-container .q-container .item:hover {
+              #question .container .card .card-text .question-container .q-container .q-item .collapse {
+                position: absolute;
+                display: none; }
+              #question .container .card .card-text .question-container .q-container .q-item:hover {
                 padding-left: 20px;
                 color: #e45253;
                 border-bottom: solid 1.5px #e45253; }
+                #question .container .card .card-text .question-container .q-container .q-item:hover .displayed {
+                  width: auto;
+                  max-width: 220px;
+                  min-height: 40px;
+                  margin-top: 15px;
+                  margin-left: -30px;
+                  color: #727473;
+                  -webkit-box-shadows: 0 0 20px rgba(48, 46, 77, 0.1);
+                  -moz-box-shadows: 0 0 20px rgba(48, 46, 77, 0.1);
+                  -o-box-shadows: 0 0 20px rgba(48, 46, 77, 0.1);
+                  box-shadow: 0 0 20px rgba(48, 46, 77, 0.1);
+                  background-color: rgba(242, 247, 246, 0.95);
+                  overflow: hidden; }
+                  #question .container .card .card-text .question-container .q-container .q-item:hover .displayed:hover {
+                    display: none; }
 
 @media (max-width: 800px) {
   body {

@@ -49,17 +49,39 @@
                         margin-bottom: 0;
                         padding-bottom: 0; 
                         width: 42%; 
-                        .item{
+                        .q-item{
                             list-style: none; 
                             height: 50px;  
-                            padding: 10px 10px 10px 10px;
+                            margin: 10px 10px 10px 10px;
                             border-bottom: solid 1px $border-color; 
                             cursor: pointer;
                             @include transition(0.4);
+
+                            .collapse{
+                                position : absolute ; 
+                                display : none ;  
+                            }
+
                             &:hover{    
                                 padding-left: 20px;  
                                 color: $red;
                                 border-bottom: solid 1.5px $red;
+
+                                .displayed{   
+                                    //display : block ;
+                                    width: auto; 
+                                    max-width: 220px;
+                                    min-height: 40px; 
+                                    margin-top: 15px;
+                                    margin-left: -30px;
+                                    color: $dark-grey; 
+                                    @include shadow-light;
+                                    background-color: rgba($xxlight-grey,0.95);
+                                    overflow: hidden;
+                                    &:hover{ 
+                                        display : none ;  
+                                    }
+                                }
                             }
                         }
                     }
