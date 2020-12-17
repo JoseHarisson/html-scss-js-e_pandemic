@@ -1,3 +1,5 @@
+//*** DISPLAY ANSWER OF QUESTION ****/
+
 const questionItems=document.querySelectorAll(".q-item"),
       totalQuestionItems = questionItems.length, 
       answerItems=document.querySelectorAll(".q-answer"),
@@ -12,8 +14,6 @@ const questionItems=document.querySelectorAll(".q-item"),
       }
       
       for(let i=0; i<totalQuestionItems;i++){ 
-          //console.log(questionItems[i]); 
-            console.log(questionItems[i]); 
             questionItems[i].addEventListener("click",function(){  
                 if(answerItems[i].classList.contains("visible")){  
                     RemoveVisibility(); 
@@ -25,3 +25,24 @@ const questionItems=document.querySelectorAll(".q-item"),
                  
             }) 
         } 
+         
+
+
+        //***** GET DATA FROM JSON ****/
+var myData = JSON.parse(data);  
+var mainContainer = document.getElementById("myData"); 
+for( let i=0; i<myData.length;i++){
+    var ul = document.createElement("ul") ;
+    ul.className='container-item';
+    ul.classList.add('data');
+    for(let j=0; j<4;j++){
+        var li = document.createElement("li");
+        li.className='item';
+        if (j ==0) {li.innerHTML = myData[i].country; }
+        if (j ==1) {li.innerHTML = myData[i].cases; }
+        if (j ==2) {li.innerHTML = myData[i].death; }
+        if (j ==3) {li.innerHTML = myData[i].recovered; }
+        ul.appendChild(li)
+    }  
+    mainContainer.appendChild(ul);
+} 
