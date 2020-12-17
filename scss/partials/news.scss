@@ -1,0 +1,72 @@
+@import 'variables';
+
+#news {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    .container{
+        width: 75%; 
+        padding: 20px;
+        background-color: $light-white;
+        font-family: "Lato",sans-serif;
+        @include shadow-dark;
+        @include border-radius(20px);
+        .card{
+            @include flex(column); 
+            .card-text{
+                @include flex(column);
+                width: 100%;
+                justify-content: center;
+                align-content: center;
+                padding-bottom: 30px; 
+                span{
+                    color: $green;
+                    font-weight: bold;
+                }
+                h1{
+                    align-items:center;
+                    padding: 50px;
+                    font-size: $size-xxlarge;
+                    
+                }   
+            }
+            .card-table-title{  
+                    flex-basis: 80%;  
+                    width: 100%; 
+                    padding-bottom: 25px;
+                    
+                    .container-item{  
+                        @include flex (row);
+                        justify-content: space-between; 
+                        align-items: center;
+                        border-bottom: solid 1px $border-color; 
+                        border-top: solid 1px $border-color; 
+                        
+                        li{
+                            width: 25%;
+                            text-align: right;
+                            padding: 12px 40px 12px 40px;
+                            list-style: none; 
+                            font-size: $size-large;  
+                            &:first-child{
+                                text-align: left;
+                            }  
+                        } 
+                    }
+                    .data{ 
+                        border-top: none;  
+                        li{ 
+                            font-size: $size-medium;   
+                        }
+                    }
+                
+            }
+        }
+    }
+}
+b[class="blue"]{
+    color:$blue;
+}
+
+@include responsive;
