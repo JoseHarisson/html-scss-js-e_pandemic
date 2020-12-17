@@ -97,7 +97,7 @@ header {
   #prevent-text .container .card .card-text {
     font-size: 1em;
     padding: 50px 25px 50px 25px; } }
-@media (max-width: 1233px) {
+@media (max-width: 1280px) {
   #question .container .card .card-img {
     display: none; }
   #question .container .card .card-text .question-container {
@@ -110,9 +110,9 @@ header {
       margin-bottom: 0;
       padding-bottom: 0;
       width: 100%; }
-      #question .container .card .card-text .question-container .q-container .item {
+      #question .container .card .card-text .question-container .q-container .q-item {
         list-style: none;
-        height: 50px;
+        height: 40px;
         padding: 10px 10px 10px 10px;
         border-bottom: solid 1px #ececec;
         cursor: pointer;
@@ -120,10 +120,12 @@ header {
         -moz-transition: all 0.4s ease;
         -o-transition: all 0.4s ease;
         transition: all 0.4s ease; }
-        #question .container .card .card-text .question-container .q-container .item:hover {
+        #question .container .card .card-text .question-container .q-container .q-item:hover {
           padding-left: 20px;
           color: #e45253;
-          border-bottom: solid 1.5px #e45253; } }
+          border-bottom: solid 1.5px #e45253; }
+          #question .container .card .card-text .question-container .q-container .q-item:hover .q-answer {
+            max-width: 65%; } }
 #info {
   width: 100%;
   display: flex;
@@ -199,7 +201,7 @@ header {
   #prevent-text .container .card .card-text {
     font-size: 1em;
     padding: 50px 25px 50px 25px; } }
-@media (max-width: 1233px) {
+@media (max-width: 1280px) {
   #question .container .card .card-img {
     display: none; }
   #question .container .card .card-text .question-container {
@@ -212,9 +214,9 @@ header {
       margin-bottom: 0;
       padding-bottom: 0;
       width: 100%; }
-      #question .container .card .card-text .question-container .q-container .item {
+      #question .container .card .card-text .question-container .q-container .q-item {
         list-style: none;
-        height: 50px;
+        height: 40px;
         padding: 10px 10px 10px 10px;
         border-bottom: solid 1px #ececec;
         cursor: pointer;
@@ -222,10 +224,12 @@ header {
         -moz-transition: all 0.4s ease;
         -o-transition: all 0.4s ease;
         transition: all 0.4s ease; }
-        #question .container .card .card-text .question-container .q-container .item:hover {
+        #question .container .card .card-text .question-container .q-container .q-item:hover {
           padding-left: 20px;
           color: #e45253;
-          border-bottom: solid 1.5px #e45253; } }
+          border-bottom: solid 1.5px #e45253; }
+          #question .container .card .card-text .question-container .q-container .q-item:hover .q-answer {
+            max-width: 65%; } }
 #prevent {
   width: 100%;
   display: flex;
@@ -330,7 +334,7 @@ header {
   #prevent-text .container .card .card-text {
     font-size: 1em;
     padding: 50px 25px 50px 25px; } }
-@media (max-width: 1233px) {
+@media (max-width: 1280px) {
   #question .container .card .card-img {
     display: none; }
   #question .container .card .card-text .question-container {
@@ -343,9 +347,9 @@ header {
       margin-bottom: 0;
       padding-bottom: 0;
       width: 100%; }
-      #question .container .card .card-text .question-container .q-container .item {
+      #question .container .card .card-text .question-container .q-container .q-item {
         list-style: none;
-        height: 50px;
+        height: 40px;
         padding: 10px 10px 10px 10px;
         border-bottom: solid 1px #ececec;
         cursor: pointer;
@@ -353,10 +357,12 @@ header {
         -moz-transition: all 0.4s ease;
         -o-transition: all 0.4s ease;
         transition: all 0.4s ease; }
-        #question .container .card .card-text .question-container .q-container .item:hover {
+        #question .container .card .card-text .question-container .q-container .q-item:hover {
           padding-left: 20px;
           color: #e45253;
-          border-bottom: solid 1.5px #e45253; } }
+          border-bottom: solid 1.5px #e45253; }
+          #question .container .card .card-text .question-container .q-container .q-item:hover .q-answer {
+            max-width: 65%; } }
 #question {
   width: 100%;
   display: flex;
@@ -476,7 +482,7 @@ header {
   #prevent-text .container .card .card-text {
     font-size: 1em;
     padding: 50px 25px 50px 25px; } }
-@media (max-width: 1233px) {
+@media (max-width: 1280px) {
   #question .container .card .card-img {
     display: none; }
   #question .container .card .card-text .question-container {
@@ -489,9 +495,9 @@ header {
       margin-bottom: 0;
       padding-bottom: 0;
       width: 100%; }
-      #question .container .card .card-text .question-container .q-container .item {
+      #question .container .card .card-text .question-container .q-container .q-item {
         list-style: none;
-        height: 50px;
+        height: 40px;
         padding: 10px 10px 10px 10px;
         border-bottom: solid 1px #ececec;
         cursor: pointer;
@@ -499,10 +505,12 @@ header {
         -moz-transition: all 0.4s ease;
         -o-transition: all 0.4s ease;
         transition: all 0.4s ease; }
-        #question .container .card .card-text .question-container .q-container .item:hover {
+        #question .container .card .card-text .question-container .q-container .q-item:hover {
           padding-left: 20px;
           color: #e45253;
-          border-bottom: solid 1.5px #e45253; } }
+          border-bottom: solid 1.5px #e45253; }
+          #question .container .card .card-text .question-container .q-container .q-item:hover .q-answer {
+            max-width: 65%; } }
 * {
   margin: 0;
   padding: 0; }
@@ -546,7 +554,7 @@ body {
   #prevent-text .container .card .card-text {
     font-size: 1em;
     padding: 50px 25px 50px 25px; } }
-@media (max-width: 1233px) {
+@media (max-width: 1280px) {
   #question .container .card .card-img {
     display: none; }
   #question .container .card .card-text .question-container {
@@ -559,9 +567,9 @@ body {
       margin-bottom: 0;
       padding-bottom: 0;
       width: 100%; }
-      #question .container .card .card-text .question-container .q-container .item {
+      #question .container .card .card-text .question-container .q-container .q-item {
         list-style: none;
-        height: 50px;
+        height: 40px;
         padding: 10px 10px 10px 10px;
         border-bottom: solid 1px #ececec;
         cursor: pointer;
@@ -569,9 +577,11 @@ body {
         -moz-transition: all 0.4s ease;
         -o-transition: all 0.4s ease;
         transition: all 0.4s ease; }
-        #question .container .card .card-text .question-container .q-container .item:hover {
+        #question .container .card .card-text .question-container .q-container .q-item:hover {
           padding-left: 20px;
           color: #e45253;
-          border-bottom: solid 1.5px #e45253; } }
+          border-bottom: solid 1.5px #e45253; }
+          #question .container .card .card-text .question-container .q-container .q-item:hover .q-answer {
+            max-width: 65%; } }
 
 /*# sourceMappingURL=style.css.map */

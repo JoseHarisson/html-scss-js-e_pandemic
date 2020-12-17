@@ -48,7 +48,7 @@
 
  
     } 
-    @media (max-width: 1233px) {
+    @media (max-width: 1280px) {
         @content; 
 
 
@@ -70,9 +70,9 @@
                 margin-bottom: 0;
                 padding-bottom: 0;
                 width: 100%; 
-                .item{
+                .q-item{
                     list-style: none; 
-                    height: 50px;  
+                    height: 40px;  
                     padding: 10px 10px 10px 10px;
                     border-bottom: solid 1px $border-color; 
                     cursor: pointer;
@@ -81,6 +81,10 @@
                         padding-left: 20px;  
                         color: $red;
                         border-bottom: solid 1.5px $red;
+                        
+                        .q-answer{
+                            max-width:65%;
+                        }
                     }
                 }
             }
