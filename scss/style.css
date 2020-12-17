@@ -427,8 +427,7 @@ header {
                 padding-left: 20px;
                 color: #e45253;
                 border-bottom: solid 1.5px #e45253; }
-                #question .container .card .card-text .question-container .q-container .q-item:hover .collapse {
-                  display: block;
+                #question .container .card .card-text .question-container .q-container .q-item:hover .q-answer {
                   width: auto;
                   max-width: 220px;
                   min-height: 40px;
@@ -441,8 +440,12 @@ header {
                   box-shadow: 0 0 20px rgba(48, 46, 77, 0.1);
                   background-color: rgba(242, 247, 246, 0.95);
                   overflow: hidden; }
-                  #question .container .card .card-text .question-container .q-container .q-item:hover .collapse:hover {
+                  #question .container .card .card-text .question-container .q-container .q-item:hover .q-answer:hover {
                     display: none; }
+                #question .container .card .card-text .question-container .q-container .q-item:hover .collapse {
+                  display: none; }
+                #question .container .card .card-text .question-container .q-container .q-item:hover .visible {
+                  display: block; }
 
 @media (max-width: 800px) {
   body {

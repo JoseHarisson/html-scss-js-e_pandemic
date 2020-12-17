@@ -65,9 +65,7 @@
                                 padding-left: 20px;  
                                 color: $red;
                                 border-bottom: solid 1.5px $red;
-
-                                .collapse{   
-                                    display : block ;
+                                .q-answer{   
                                     width: auto; 
                                     max-width: 220px;
                                     min-height: 40px; 
@@ -77,10 +75,15 @@
                                     @include shadow-light;
                                     background-color: rgba($xxlight-grey,0.95);
                                     overflow: hidden;
-                                    &:hover{
-                                        
-                                    display : none ;  
+                                    &:hover{ 
+                                        display : none ;  
                                     }
+                                }
+                                .collapse{ 
+                                    display : none ; 
+                                }
+                                .visible{ 
+                                    display : block ;
                                 }
                             }
                         }
