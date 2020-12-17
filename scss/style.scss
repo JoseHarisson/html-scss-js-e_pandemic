@@ -17,6 +17,7 @@ a{
 }
 body{
     background-color: $xlight-grey;
+    min-width: 550px;
     height: 2000px;
     .sections{
         #info{ 

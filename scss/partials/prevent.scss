@@ -12,23 +12,8 @@
         background-color: transparent;
         font-family: "Lato",sans-serif;  
         .card{
-            @include flex(row);
-            justify-content: center; 
-            .card-img{   
-                width: auto;
-                height: auto;
-                max-width: 440px;
-                max-height: 290px; 
-                g{
-                    path{
-                        fill: $green;
-                    }
-                    .corona{
-                        fill: $red;
-                        
-                    }
-                }
-            }
+            @include flex(row); 
+             
             .card-text{   
                 span{
                     color: $red;

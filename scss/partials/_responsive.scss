@@ -38,8 +38,16 @@
         
         
         //*** PREVENT ***
-        #prevent .no-box-container .card .card-text{
-            font-size: $size-xsmall;
+        #prevent .no-box-container .card{
+            
+            .card-text{
+                font-size: $size-xsmall;
+            }
+
+            .card-img2{
+                width: 150px;
+                height: 150px;
+            }
         }
         #prevent-text .container .card .card-text{
             font-size: $size-medium;
@@ -64,8 +72,50 @@
             }
             
             
+        }
+
+
+        /* * * * NEWS * * * */
+        #news { 
+            .container{ 
+                .card{ 
+                    .card-text{  
+                        h1{ 
+                            font-size: $size-xlarge; 
+                        }   
+                    }  
+                    .card-table-title{    
+                            .container-item{   
+                                .item{ 
+                                    font-size: $size-medium;  
+                                    &:first-child{ 
+                                        min-width: auto;
+                                    }  
+                                } 
+                            }
+                            .data{   
+                                .item{ 
+                                    font-size: $size-small;   
+                                }
+                            }
+                        
+                    }
+                }
             }
+        }
+
+
     } 
+
+
+
+
+
+
+
+
+
+
     @media (max-width: 1190px) {
         @content; 
         

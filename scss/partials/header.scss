@@ -15,9 +15,10 @@ header {
     .container{
         @include flex(row);
         .logo { 
-             flex-basis: 20%;
+            flex-basis: 20%;
             padding-left :10px;
             padding-right :10px;
+            min-width: 255px;
             a{
                 text-decoration: none;
                 color: $green;

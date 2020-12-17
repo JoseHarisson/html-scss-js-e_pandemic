@@ -25,37 +25,41 @@
                     font-weight: bold;
                 }
                 h1{
+                    @include transition(0.5);
                     align-items:center;
                     padding: 50px;
                     font-size: $size-xxlarge;
                     
                 }   
+            } 
+            &:last-child{ 
+                padding-bottom: 45px;
             }
             .card-table-title{  
                     flex-basis: 80%;  
-                    width: 100%; 
-                    padding-bottom: 25px;
-                    
+                    width: 100%;  
                     .container-item{  
                         @include flex (row);
                         justify-content: space-between; 
                         align-items: center;
                         border-bottom: solid 1px $border-color; 
                         border-top: solid 1px $border-color; 
-                        
                         .item{
                             width: 25%;
                             text-align: right;
-                            padding: 12px 40px 12px 40px;
+                            padding: 12px 25px 12px 25px;
                             list-style: none; 
+                            @include transition(0.5);
                             font-size: $size-large;  
                             &:first-child{
-                                text-align: left;
+                                min-width: 130px;
+                                text-align: left; 
                             }  
                         } 
                     }
                     .data{ 
-                        border-top: none;  
+                        border-top: none;
+                        padding-top: 0;  
                         .item{ 
                             font-size: $size-medium;   
                         }
