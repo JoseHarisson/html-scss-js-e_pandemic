@@ -2,7 +2,7 @@
 //*** BEGIN Responsive ***//
 
 @mixin responsive{
-    @media (max-width: 800px) {
+    @media (max-width: 750px) {
         @content; 
         body{
             background-color: rgba(152, 251, 152, 0.137);
@@ -44,16 +44,31 @@
         #prevent-text .container .card .card-text{
             font-size: $size-medium;
             padding: 50px 25px 50px 25px;
-        }
+        } 
 
- 
+
+         //*** FOOTER ***//
+         footer .container .card{
+             font-size: $size-small;
+             .card-source{  
+                .container {
+                    display: flex;
+                    justify-content: space-between; 
+                    @include shadow-ulight; 
+                        
+                    img{
+                        width: 55px;
+                        height: 55px;
+                    }
+                }
+            }
+            
+            
+            }
     } 
-    @media (max-width: 1280px) {
+    @media (max-width: 1190px) {
         @content; 
-
-
-
-
+        
         
 
         //*** QUESTION ***   
@@ -91,6 +106,11 @@
             }
             
         } 
+
+
+
+        //*** FOOTER ***//
+        footer .container .card{@include flex(column);}
     }
     
 }
