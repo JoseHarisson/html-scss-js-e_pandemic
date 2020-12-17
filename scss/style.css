@@ -409,7 +409,6 @@ header {
             min-height: 200px;
             margin: 15px;
             margin-bottom: 0;
-            padding-bottom: 0;
             width: 42%; }
             #question .container .card .card-text .question-container .q-container .q-item {
               list-style: none;
@@ -428,7 +427,8 @@ header {
                 padding-left: 20px;
                 color: #e45253;
                 border-bottom: solid 1.5px #e45253; }
-                #question .container .card .card-text .question-container .q-container .q-item:hover .displayed {
+                #question .container .card .card-text .question-container .q-container .q-item:hover .collapse {
+                  display: block;
                   width: auto;
                   max-width: 220px;
                   min-height: 40px;
@@ -441,7 +441,7 @@ header {
                   box-shadow: 0 0 20px rgba(48, 46, 77, 0.1);
                   background-color: rgba(242, 247, 246, 0.95);
                   overflow: hidden; }
-                  #question .container .card .card-text .question-container .q-container .q-item:hover .displayed:hover {
+                  #question .container .card .card-text .question-container .q-container .q-item:hover .collapse:hover {
                     display: none; }
 
 @media (max-width: 800px) {

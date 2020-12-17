@@ -46,8 +46,7 @@
                     .q-container{
                         min-height: 200px;
                         margin: 15px;
-                        margin-bottom: 0;
-                        padding-bottom: 0; 
+                        margin-bottom: 0; 
                         width: 42%; 
                         .q-item{
                             list-style: none; 
@@ -67,8 +66,8 @@
                                 color: $red;
                                 border-bottom: solid 1.5px $red;
 
-                                .displayed{   
-                                    //display : block ;
+                                .collapse{   
+                                    display : block ;
                                     width: auto; 
                                     max-width: 220px;
                                     min-height: 40px; 
@@ -78,8 +77,9 @@
                                     @include shadow-light;
                                     background-color: rgba($xxlight-grey,0.95);
                                     overflow: hidden;
-                                    &:hover{ 
-                                        display : none ;  
+                                    &:hover{
+                                        
+                                    display : none ;  
                                     }
                                 }
                             }
